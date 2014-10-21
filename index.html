@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Quiz App</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Test Your Brain!</h1>
+		<p>How well do you know statistics? Take the quiz and find out!</p>
+	</header>
+	<main>
+		<div class="score"></div>
+		<h2 class="question-title"></h2>
+		<p class="question-text"></p>
+		<form>
+			<ul class="answers">
+				<li class="answer">
+					<input type="radio" name="answer" id="0" required>
+					<label for="0"></lable>
+				</li>
+				<li class="answer">
+					<input type="radio" name="answer" id="1">
+					<label for="1"></lable>
+				</li>
+				<li class="answer">
+					<input type="radio" name="answer" id="2">
+					<label for="2"></lable>
+				</li>
+				<li class="answer">
+					<input type="radio" name="answer" id="3">
+					<label for="3"></lable>
+				</li>
+			</ul>
+			<button type="submit" class="next-button">Choose an Answer</button>
+		</form>
+		<div class="explain hide"></div>
+	</main>
+	<footer>Copyright Dustin Baker</footer>
+</body>
+</html>

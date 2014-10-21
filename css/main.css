@@ -1,0 +1,143 @@
+@import url(http://fonts.googleapis.com/css?family=Graduate);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
+
+* {
+	box-sizing: border-box;
+}
+
+html, input, button {
+	font-family: "Open Sans", sans-serif;
+	font-size: 100%;
+}
+
+body {
+	background-image: url('../images/traffic.jpg');
+	background-size: 1418px 595px;
+	background-position: 0em 9em;
+	background-repeat: no-repeat;
+}
+
+header {
+	width: 100%;
+	height: 10em;
+	background-color: white;
+	text-align: center;
+	padding-top: 3em;
+}
+
+h1 {
+	font-family: Graduate, serif;
+	font-size: 250%;
+	margin-bottom: .5em;
+}
+
+footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	height: 5em;
+	text-align: center;
+	padding-top: 2em;
+}
+
+main {
+	background-color: rgba(255,255,255,.8);
+	width: 60em;
+	margin: 4em auto;
+	padding: 2em;
+	border-radius: 3px;
+	position: relative;
+	min-height: 26em;
+}
+
+.next-button {
+	width: 15em;
+	height: 3em;
+	line-height: 3em;
+	background-color: #444;
+	color: white;
+	text-align: center;
+	border-radius: 4px;
+	padding: 0;
+	-ms-user-select: none; /* IE 10+ */
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	border: none;
+	position: absolute;
+	bottom: 3em;
+	left: calc(50% - 7.5em);
+	transition: width ease-in-out .5s;
+	transition: left ease-in-out .5s;
+	z-index: 1;
+}
+
+.next-button:hover {
+	background-color: #666;
+}
+
+.next-button:focus {
+	outline: none;
+}
+
+.explain {
+	height: 12em;
+	width: 56em;
+	background-color: #fad3bb;
+	transform: scale(1,1);
+	transition: transform, height, width, left, bottom;
+	transition-duration: .5s;
+	transition-timing-function: ease-in-out;
+	position: absolute;
+	bottom: 2em;
+	left: calc(50% - 28em);
+	z-index: 0;
+	padding: 1em;
+	border-radius: 4px;
+	border: 2px solid #f5b796;
+}
+
+.hide {
+	transform: scale(0,0);
+}
+
+.grow {
+	height: 26em;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+b {
+	font-weight: 800;
+}
+
+.score {
+	position: absolute;
+	top: 2em;
+	right: 2em;
+}
+
+.question-title {
+	margin-bottom: 1.5em;
+	font-weight: 800;
+}
+
+li, .question-text, .explain {
+	line-height: 125%;
+}
+
+.question-text {
+	margin-bottom: .5em;
+}
+
+iframe {
+	position: absolute;
+	left: calc(50% - 184px);
+	top: 7em;
+}
